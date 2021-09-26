@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+
+    <link href="styles.css" rel="stylesheet">
+
+    <title>Today's Tasks</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+</head>
+<body>
+<main>
+
+    <header class="hero">
+        <div class="center-content">
+            <h1 class="display-2 mb-4">Today's Tasks</h1>
+            <hr>
+            <p class="lead"></p>
+            <p class="number-tasks"></p>
+        </div>
+    </header>
+
+
+
+    <div class="container to-do mb-4">
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-purple text-white mt-4 btn-lg add" data-bs-toggle="modal" data-bs-target="#exampleModal"><b>+</b></button>
+            </div>
+
+            <div class="col-10">
+
+                    <ul class="list-group mb-4 mt-4" id="my-list">
+                        <li class="list-group-item">
+                            <input class="form-check-input mr-3" type="checkbox">
+                           get groceries
+
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input mr-3" type="checkbox">
+                            make bed
+                        <li class="list-group-item">
+                            <input class="form-check-input mr-3" type="checkbox" value="">
+                            complete JavaScript Project
+                        </li>
+                    </ul>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-white" id="exampleModalLabel">Add new task</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="form-floating" id="form-id">
+                        <input type="text" class="form-control" id="task-desc" required>
+                        <label for="task-desc">Task Description</label>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-outline-light" onclick="addTask()">Add Task</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</main>
+<footer class="footer mt-6">
+    <div class="container footer-container">
+        <span class="text-white">Denisa Marcisovska</span>
+        <span class="text-white"> <a href="https://www.linkedin.com/in/denisa-marcisovska/" target="_blank"> <i class="bi bi-linkedin"></i></a></span>
+        <span class="text-white"> <a href="https://github.com/dmarcisovska" target="_blank"> <i class="bi bi-github"></i></a></span>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script
+        src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+        crossorigin="anonymous"></script>
+
+<script src="scripts.js"></script>
+
+
+</body>
+</html>

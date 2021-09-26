@@ -1,0 +1,141 @@
+.hero {
+    background-image: url('night-time.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+}
+
+.center-content {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    color: white;
+}
+
+.center-content  .lead {
+    font-size: 2rem;
+    color: white;
+}
+
+.center-content h1 {
+    line-height: 1;
+    /*text-align: center;*/
+
+}
+
+.center-content hr {
+    width: 100px;
+    height: 2px;
+
+}
+
+
+.center-content .number-tasks {
+    margin-top: 15px;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px 25px;
+    border: 1px solid white;
+    text-decoration: none;
+}
+
+
+.to-do li{
+    color: #989898;
+    font-size: 21px;
+    font-family: 'Patrick Hand', cursive;
+
+}
+
+.to-do h2 {
+    font-size: 16px;
+    color: #A4A4A4;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.circle-icon {
+
+    padding: 14px 17px;
+    border:1px solid #D3D3D3;
+    border-radius: 50%;
+}
+
+.add {
+    border-radius: 50%;
+}
+
+.modal-content, .modal-body {
+    background-color: #102026;
+
+}
+
+input {
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: darkgreen;
+}
+input:focus {
+    border-color: green
+}
+
+.form-check-input[type=checkbox] {
+    margin-right: 10px;
+}
+
+
+
+
+.btn-purple{
+    color: white;
+    background-color:#102026;
+    border-color: #102026;
+    margin-right: 0;
+}
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin-bottom: 60px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #102026;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+}
+
+.footer-container span {
+    margin-left: 10px;
+}
+
+.footer-container span i {
+    font-size: 1.3rem;
+}
+
+.footer-container span a {
+    color: white;
+}
+
+.footer-container span a:hover {
+    color: #5A5706;
+}
+
+button .add {
+    margin-top:30px;
+}
